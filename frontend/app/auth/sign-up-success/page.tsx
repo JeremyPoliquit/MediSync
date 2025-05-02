@@ -2,9 +2,11 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
+import Link from 'next/link'
 
 export default function Page() {
   return (
@@ -22,6 +24,9 @@ export default function Page() {
                 before signing in.
               </p>
             </CardContent>
+            <CardFooter>
+              <p><Link href='/auth/login'><strong>{'<'} Back to Login</strong></Link></p>
+            </CardFooter>
           </Card>
         </div>
       </div>

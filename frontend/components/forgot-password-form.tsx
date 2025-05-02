@@ -7,6 +7,7 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
@@ -55,6 +56,9 @@ export function ForgotPasswordForm({ className, ...props }: React.ComponentProps
               email.
             </p>
           </CardContent>
+          <CardFooter>
+              <p><Link href='/auth/login'><strong>{'<'} Back to Login</strong></Link></p>
+            </CardFooter>
         </Card>
       ) : (
         <Card>
